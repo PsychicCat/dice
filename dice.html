@@ -15,13 +15,13 @@
 			<section>
 				<p id="text">Choose a number 1-6, or random roll!</p>
 				<ul>
-					<li><button onclick="setNumber(1); counter()">1</button></li>
-					<li><button onclick="setNumber(2); counter()">2</button></li>
-					<li><button onclick="setNumber(3); counter()">3</button></li>
-					<li><button onclick="setNumber(4); counter()">4</button></li>
-					<li><button onclick="setNumber(5); counter()">5</button></li>
-					<li><button onclick="setNumber(6); counter()">6</button></li>
-					<li><button onclick="setNumber(rollDice()); counter()">Random</button></li>
+					<li><button onclick="counter(); setNumber(1)">1</button></li>
+					<li><button onclick="counter(); setNumber(2)">2</button></li>
+					<li><button onclick="counter(); setNumber(3)">3</button></li>
+					<li><button onclick="counter(); setNumber(4)">4</button></li>
+					<li><button onclick="counter(); setNumber(5)">5</button></li>
+					<li><button onclick="counter(); setNumber(6)">6</button></li>
+					<li><button onclick="counter(); setNumber(rollDice())">Random</button></li>
 				</ul>
 			</section>
 			<article>
@@ -30,10 +30,11 @@
 			</article>
 			<footer>
 			<p id="result"></p>
+			<h3>Stats:</h3>
 			<ul>
 				<li><p id="counter">Games Played: </p></li>
 				<li><p id="winloss">Wins / Losses: 0 / 0</p></li>
-				<li><p id="percent">Win Percentage: coming soon</p></li>
+				<li><p id="percent">Win Percentage:</p></li>
 			</footer>
 		</div>
 	</main>
